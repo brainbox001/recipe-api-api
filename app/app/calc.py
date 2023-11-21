@@ -1,16 +1,16 @@
 """
-  Creating a basic calculator
+    Creating a basic calculator
 """
 
 def add(x, y):
-  """
-    Function to add two numbers
-  """
-  return x + y
+    """
+      Function to add two numbers
+    """
+    return x + y
 
 
 def subtract(x, y):
-  """
-    Function to subtract two numbers
-  """
-  return y - x
+    """
+      Function to subtract two numbers
+    """
+    return y - x
