@@ -3,7 +3,7 @@ Tests for models.
 """
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-from django.urls import reverse
+from django.urls import reverse # noqa
 
 
 class ModelTests(TestCase):
