@@ -78,7 +78,8 @@ class PrivateRecipeApiTests(TestCase):
         recipe2 = create_recipe(user=self.user)
 
         res = self.client.get(RECIPES_URL)
+        recipes = Recipe.objects.filter(user=self.user)
+        serializer = RecipeSerializer(recipes, many=True)
 
-        self.assertEqual(len(res.data), 1)
-        self.assertNotIn(recipe1, res.data)
-        self.assertIn(recipe2, res.data)
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        self.assertEqual(res.data, serializer.data)
