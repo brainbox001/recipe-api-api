@@ -5,7 +5,7 @@ A recipe API project where users can upload and manage their recipes, add tags, 
 
 + The application runs on a docker container.
 
-+ There are two docker-compose files, the "docker-compose.yml" is used for the application development, the "docker-compose-deploy.yml" is used in production.
++ There are two docker-compose files in the root directory, the "docker-compose.yml" is used for the application development, the "docker-compose-deploy.yml" is used in production.
 
 + Fork the repository and clone it to your local computer,
 
